@@ -63,7 +63,7 @@ public class Main {
 
 # Crear el jar
 
-Tendremos que ir en la consola a nuestra ruta de la aplicación y ejecutar el mvn clean package para que nos cree nuestro jar en la carpeta llamada target
+Tendremos que ir en la consola a nuestra ruta de la aplicación y ejecutar el `mvn clean package` para que nos cree nuestro jar en la carpeta llamada target
 
 ```
 C:\Users\MaQuiNa1995\workspace\docker>mvn clean package
@@ -119,7 +119,7 @@ MAINTAINER MaQuiNa1995
 COPY target/docker-0.0.1-SNAPSHOT.jar docker-0.0.1-SNAPSHOT.jar
 ENTRYPOINT ["java","-jar","/docker-0.0.1-SNAPSHOT.jar"]
 ```
-docker-0.0.1-SNAPSHOT.jar -> hace referencia al nombre del jar de nuestro proyecto que es el resultado de la unión de `artifactId-version.jar`
+`docker-0.0.1-SNAPSHOT.jar` -> hace referencia al nombre del jar de nuestro proyecto que es el resultado de la unión de `artifactId-version.jar`
 
 # Crear Imagen
 
@@ -161,13 +161,10 @@ Use 'docker scan' to run Snyk tests against images to find vulnerabilities and l
  
  # Ejecutar Imagen 
  
- docker run -pPuertoOrdenadorLocal:PuertoAplicaciónDocker nombreContenedor:version
- 
- docker run -p9999:8080 hola-mundo:latest
- 
+ Chuleta: `docker run -pPuertoOrdenadorLocal:PuertoAplicaciónDocker nombreContenedor:version`
  
  ```
- C:\Users\MaQuiNa1995\workspace\binaryshock\docker>docker run -p9999:8080 hola-mundo:latest
+ C:\Users\MaQuiNa1995\workspace\docker>docker run -p9999:8080 hola-mundo:latest
 
 ,--.   ,--.         ,-----.           ,--.,--.  ,--.         ,--. ,---.  ,---. ,-----.        ,----.   ,--.  ,--.  ,--.             ,--.
 |   `.'   | ,--,--.'  .-.  '  ,--.,--.`--'|  ,'.|  | ,--,--./   || o   \| o   \|  .--',-----.'  .-./   `--',-'  '-.|  ,---. ,--.,--.|  |-.
