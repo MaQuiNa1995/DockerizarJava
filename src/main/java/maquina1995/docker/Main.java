@@ -22,5 +22,4 @@ public class Main {
 		LOGGER.info("Se ha entrado al controller");
 		return "Hola mundo desde docker";
 	}
-
 }
