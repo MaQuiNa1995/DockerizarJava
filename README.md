@@ -28,6 +28,8 @@ Lo primero que tendremos que hacer es cofigurar nuestro pom para que cree un jar
 	</plugins>
 </build>
 ```
+Otras posibilidades para configurar Gradle, java vanilla, Ant etc [Aqui](https://stackoverflow.com/a/9689877/7707422)
+
 # Crear la aplicación
 
 Despues de configurar el pom tendremos que crear el código de la aplicación en este caso he optado por un main y un controller embebido para simplificar las cosas y que la guía quede lo mas limpia posible
